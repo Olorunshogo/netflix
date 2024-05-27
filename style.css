@@ -416,7 +416,7 @@ section {
     background-color: #111;
     color: #ddd;
     width: 150px;
-    padding: 12px 18px;
+    padding: 8px 18px;
     border: 1px solid rgba(150,150,150, 0.6);
     border-radius: 4px;
     box-shadow: 1px 1px 2px  1px #333;
@@ -428,26 +428,24 @@ section {
     justify-content: space-between;
 }
 
-.footer .triangle {
-    font-size: 30px;
-    /* position: absolute;
-    right: 10px; */
+.footer .translate-button i.fa {
+    font-size: 20px;
 }
 
-.footer #rightTriangle {
+.footer #down {
     display: none;
 }
 
 .footer .langs-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     width: 50%;
     transition: var(--trans-4);
     display: none;
 }
 
-.footer .languages-container form {
+.footer .langs-container form {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -455,12 +453,13 @@ section {
     margin-left: 5%;
 }
 
-.footer .languages-container form .english,
-.footer .languages-container form .yoruba,
-.footer .languages-container form .hausa,
-.footer .languages-container form .igbo,
-.footer .languages-container form .french {
-    padding: 6px;
+.footer .langs-container form .english,
+.footer .langs-container form .yoruba,
+.footer .langs-container form .hausa,
+.footer .langs-container form .igbo,
+.footer .langs-container form .french,
+.footer .langs-container form .russian {
+    margin: 12px 0;
     flex: 0 0 50%;
     max-width: 50%;
 }

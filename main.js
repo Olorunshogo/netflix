@@ -28,12 +28,12 @@ function faqOpen5() {
 }
 
 function faqOpen6() {
-    document.getElementById("additionIcon6").style.display = "none";
+    document.getElementById("down").style.display = "none";
     document.getElementById('faq6').style.display = "block";
 }
 
- // Onclick closes the hidden div
- function faqClose() {
+// Onclick closes the hidden div
+function faqClose() {
     document.getElementById('faq1').style.display = "none";
     document.getElementById('faq2').style.display = "none";
     document.getElementById('faq3').style.display = "none";
@@ -46,14 +46,17 @@ function faqOpen6() {
     document.getElementById("additionIcon4").style.display = "block";
     document.getElementById("additionIcon5").style.display = "block";
     document.getElementById("additionIcon6").style.display = "block";
-
-    // Footer Language Div
-    document.getElementById('faq6').style.display = "none";
-    document.getElementById("additionIcon6").style.display = "block";
+}
+// FOOTER Language Div
+function langsOpen() {
+    document.getElementById("right").style.display = "none";
+    document.getElementById("langs-container").style.display = "block";
+    document.getElementById("down").style.display = "block";
 }
 
 // FOOTER Language Div
-function langsOpen() {
-    document.getElementById("additionIcon6").style.display = "none";
-    document.getElementById('faq6').style.display = "block";
+function langsClose() {
+    document.getElementById("down").style.display = "none";
+    document.getElementById("langs-container").style.display = "none";
+    document.getElementById("right").style.display = "block";
 }

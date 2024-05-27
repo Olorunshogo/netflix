@@ -1,395 +1,372 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Artist portfolio" />
-    <meta name="Arthur" content="BAMTEFA, Olorunshogo Moses" />
-    <title>Netflix - Watch TV Shows Online, Watch Movies Online</title>
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="/Traversy/6. Netflix Page/Netflix Page.css">
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/form icon - Google Search_files/faviconV2(7)">
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <!-- Referencing external JavaScript file -->
-    <script src="/Traversy/6. Netflix Page/Netflix Page.js" async></script>
-</head>
-<body>
-    <!-- Showcase -->
-    <header class="showcase">
-         <div class="showcase-top">
-           <img src="Netflix icon.png" alt="Netflix Top logo">
-           <a href="#" class="btn btn-rounded">Sign In</a>
-        </div>
-        <div class="showcase-content">
-            <h1>Unlimited movies, TV shows, and more</h1>
-            <p>Watch anywhere. Cancel anytime. Ready to watch? Enter your email to create or restart your membership.</p>
-            <div class="registration">
-                <form action="home.php">
-                    <input type="email" name="email address" id="showcase-email" placeholder="Email address">
-                </form>
-                <a href="#" class="btn btn-xl">
-                    Get Started <span id="getStarted">&rsaquo;</span>
-                </a>
-            </div>
-        </div>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Netflix Website" />
+        <meta name="Arthur" content="BAMTEFA, Olorunshogo Moses" />
+        <title>Netflix - Watch TV Shows Online, Watch Movies Online</title>
 
-    <!-- Section1: Enjoy on your TV -->
-    <section>
-        <div class="section1">
-            <div class="description">
-                <h1>Enjoy on your TV</h1>
-                <p>Watch on smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
-            </div>
-            <div class="background-image">
-                <img src="/Traversy/6. Netflix Page/Section 1 Image.png" alt="Image of a TV set" style="width: 100%;">
-            </div>
-        </div>
-    </section>
+        <!-- STYLESHEETt -->
+        <link rel="stylesheet" href="style.css">
 
-    <!-- Section2: Mobile -->
-    <section>
-        <div class="section2">
-            <div class="background-image" id="mobile">
-                <img src="/Traversy/6. Netflix Page/Netflix section 2 mobile.jpg" alt="Image of a mobile phone" style="width: 100%;">
-            </div>
-            <div class="description">
-                <h1>Download your shows to watch offline</h1>
-                <p>Save your favorites easily and always have something to watch.</p>
-            </div>
-        </div>
-    </section>
+        <!-- FAVICON -->
+        <link rel="icon" type="image/x-icon" href="/form icon - Google Search_files/faviconV2(7)">
 
-    <!-- Section3: Watch Everywhere -->
-    <section>
-        <div class="section3">
-            <div class="description">
-                <h1>Watch everywhere</h1>
-                <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
-            </div>
-            <div></div>
-        </div>
-    </section>
+        <!-- GOOGLE FONT -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
-    <!-- Section4: Kids -->
-    <section>
-        <div class="section4">
-            <div class="background-image">
-                <img src="/Traversy/6. Netflix Page/Netflix section 4 kids.png" alt="Kids Image" style="width: 100%;">
-            </div>
-            <div class="description">
-                <h1>Create profiles for kids</h1>
-                <p>Send kids on adventures with their favorite characters in a space made just for them—free with your membership.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section5: Frequently Asked Questions -->
-    <section>
-        <div class="section5">
-            <h1>Frequently Asked Questions</h1>
-
-            <div class="faq" title="FAQ 1">
-                <p onclick="faqOpen1()">What is Netflix?</p>
-                <div>
-                    <span class="additionIcon" onclick="faqOpen1()">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="auto" viewBox="0 0 2048 2048"><path fill="currentColor" d="M1920 896v128h-896v896H896v-896H0V896h896V0h128v896h896z"/></svg>
-                    </span>
+        <!-- FONT AWESOME -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <!-- ===== SHOWCASE SECTION START -->
+        <header>
+            <div class="row">
+                <div class="showcase" title="Showcase">
+                    <div class="row">
+                        <div class="showcase-top">
+                            <div class="logo" title="Logo">
+                                <img src="/Images/Logo.png" alt="Netflix Logo">
+                            </div>
+                            <div class="sign-up" title="Sign-Up">
+                                <a href="#" target="blank" class="btn btn-rounded">Sign Up</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" title="Showcase Contents">
+                        <div class="showcase-content">
+                            <h1>Unlimited movies, TV shows, and more</h1>
+                            <p>Watch anywhere. Cancel anytime. Ready to watch? Enter your email to create or restart your membership.</p>
+                            <div class="registration" title="Register">
+                                <form action="home.php">
+                                    <input type="email" name="email address" id="showcase-email" title="Enter email" placeholder="Email address">
+                                </form>
+                                <a href="#" class="btn btn-xl" title="Get Started">
+                                    Get Started <span id="getStarted">&rsaquo;</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div id="faq1">
-                    <span class="subtractionIcon" onclick="faqClose1()">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="auto" viewBox="0 0 72 72"><path fill="#D0CFCE" d="M30 36L18 24l6-6l12 12l12-12l6 6l-12 12l12 12l-6 6l-12-12l-12 12l-6-6z"/><path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M30 36L18 24l6-6l12 12l12-12l6 6l-12 12l12 12l-6 6l-12-12l-12 12l-6-6z"/></svg>
-                    </span>
+            </div>
+        </header>
+        <!-- ===== SHOWCASE SECTION END -->
+
+        <!-- ===== ENJOY YOUR TV SECTION START -->
+        <section>
+            <div class="row">
+                <div class="tv section" title="Enjoy your TV">
+                    <div class="description">
+                        <h1>Enjoy on your TV</h1>
+                        <p>Watch on smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+                    </div>
+                    <div class="background-image" title="Television">
+                        <img src="/Images/Television.png" alt="Television" style="width: 100%;">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ===== ENJOY YOUR TV SECTION END -->
+
+        <!-- ===== DOWNLOAD AND WATCH OFFLINE SECTION START -->
+        <section>
+            <div class="row" title="Download and watch offline">
+                <div class="download section">
+                    <div class="background-image phone">
+                        <img src="/Images/Mobile lady.jpg" alt="Mobile" style="width: 100%;">
+                    </div>
+                    <div class="description">
+                        <h1>Download your shows to watch offline</h1>
+                        <p>Save your favorites easily and always have something to watch.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ===== DOWNLOAD AND WATCH OFFLINE SECTION END -->
+
+        <!-- ===== WATCH SECTION START -->
+        <section>
+            <div class="row" title="Watch and stream everywhere">
+                <div class="watch section">
+                    <div class="description">
+                        <h1>Watch everywhere</h1>
+                        <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ===== WATCH SECTION END -->
+
+        <!-- ===== KIDS SECTION START -->
+        <section>
+            <div class="row" title="Create profile for kids">
+                <div class="kids section">
+                    <div class="background-image" title="Kids">
+                        <img src="/Images/Kids.png" alt="Kids Image" style="width: 100%;">
+                    </div>
+                    <div class="description">
+                        <h1>Create profiles for kids</h1>
+                        <p>Send kids on adventures with their favorite characters in a space made just for them—free with your membership.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ===== KIDS SECTION END -->
+
+        <!-- ===== FREQUENTLY ASKED QUESTIONS START -->
+        <section>
+            <dic class="row" title="FAQ">
+                <div class="faqs section">
+                    <h1>Frequently Asked Questions</h1>    
+                    <div class="faq-container" title="What is Netflix">
+                        <div class="faq">
+                            <div>
+                                <p>What is Netflix?</p>
+                            </div>
+                            <div onclick="faqOpen1()" class="additionIcon" id="additionIcon1">
+                                &plus;
+                            </div>
+                        </div>
+                        <div id="faq1">
+                            <span onclick="faqClose()" class="multiplicationIcon" id="multiplicationIcon">&times;</span>
+                            <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.</p>
+                            <p>You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!</p>
+                        </div>                        
+                    </div>                    
     
-                    <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.</p>
-                    <p>You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!</p>
+                    <div class="faq-container" title="How much does Netflix cost">
+                        <div class="faq">
+                            <div>
+                                <p>How much does Netflix cost?</p>
+                            </div>
+                            <div  onclick="faqOpen2()" class="additionIcon" id="additionIcon2">
+                                &plus;
+                            </div>
+                        </div>
+                        <div id="faq2">
+                            <span onclick="faqClose()" id="multiplicationIcon" class="multiplicationIcon">&times;</span>   
+                            <p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₦1,200 to ₦4,400 a month. No extra costs, no contracts.?</p>
+                        </div>
+                    </div>    
+    
+                    <div class="faq-container" title="Where can I watch">
+                        <div class="faq">
+                            <div>
+                                <p>Where can I watch?</p>
+                            </div>
+                            <div onclick="faqOpen3()" class="additionIcon" id="additionIcon3">
+                                &plus;
+                            </div>
+                        </div>
+                        <div id="faq3">
+                            <span onclick="faqClose()" id="multiplicationIcon" class="multiplicationIcon">&times;</span>
+    
+                            <p>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.</p>
+                            <p>You can also download your favorite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.</p>
+                        </div>
+                    </div>
+    
+                    <div class="faq-container" title="How do I cancel">
+                        <div class="faq">
+                            <div>
+                                <p">How do I cancel?</p>
+                            </div>
+                            <div onclick="faqOpen4()" class="additionIcon" id="additionIcon4">
+                                &plus;
+                            </div>
+                        </div>
+                        <div id="faq4">
+                            <span onclick="faqClose()" id="multiplicationIcon" class="multiplicationIcon">&times;</span>    
+                            <p>Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.</p>
+                        </div>
+                    </div>
+    
+                    <div class="faq-container" title="What can I watch on Netflix">
+                        <div class="faq">
+                            <div>
+                                <p>What can I watch on Netflix?</p>
+                            </div>
+                            <div onclick="faqOpen5()" class="additionIcon" id="additionIcon5">
+                                &plus;
+                            </div>
+                        </div>
+                        <div id="faq5">
+                            <span onclick="faqClose()" id="multiplicationIcon" class="multiplicationIcon">&times;</span>  
+                            <p>Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.</p>
+                        </div>
+                    </div>
+    
+                    <div class="faq-container" title="Is Netflix good for kids">
+                        <div class="faq">
+                            <div>
+                                <p>Is Netflix good for kids?</p>
+                            </div>
+                            <div  onclick="faqOpen6()" class="additionIcon" id="additionIcon6">
+                                &plus;
+                            </div>
+                        </div>
+                        <div id="faq6">                         <span onclick="faqClose()" id="multiplicationIcon" class="multiplicationIcon">&times;</span>
+                            <p>The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and movies in their own space.</p>
+                            <p>Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.</p>
+                        </div>
+                    </div>
+    
+                    <div class="reg-container">
+                        <p>Ready to watch? Enter your email to create or restart your membership.</p>
+                        <div class="registration">
+                            <form action="home.php">
+                                <input type="email" name="email address" id="faq-email" placeholder="Email address">
+                            </form>
+                            <a href="#" class="btn btn-xl" id="faq-a">
+                                Get Started <span id="getStarted">&rsaquo;</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                
-            </div>
-            
+            </dic>            
+        </section>
+        <!-- ===== FREQUENTLY ASKED QUESTIONS END -->
 
-            <div class="faq" title="FAQ 2">
-                <p onclick="faqOpen2()">How much does Netflix cost?</p>
-                <div>
-                    <span class="additionIcon" onclick="faqOpen2()">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="auto" viewBox="0 0 2048 2048"><path fill="currentColor" d="M1920 896v128h-896v896H896v-896H0V896h896V0h128v896h896z"/></svg>
-                    </span>
-                </div>
-                <div id="faq2">
-                    <span class="subtractionIcon" onclick="faqClose2()">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="auto" viewBox="0 0 72 72"><path fill="#D0CFCE" d="M30 36L18 24l6-6l12 12l12-12l6 6l-12 12l12 12l-6 6l-12-12l-12 12l-6-6z"/><path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M30 36L18 24l6-6l12 12l12-12l6 6l-12 12l12 12l-6 6l-12-12l-12 12l-6-6z"/></svg>
-                    </span>
-
-                    <p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₦1,200 to ₦4,400 a month. No extra costs, no contracts.?</p>
-                </div>
-            </div>
-
-            <!-- Strong men make easy times.
-                Easy times make soft men.
-                Soft men make hard times.
-                Hard times make strong men.
-            -->
-
-
-            <div class="faq" title="FAQ 3">
-                <p onclick="faqOpen3()">Where can I watch?</p>
-                <div>
-                    <span class="additionIcon" onclick="faqOpen3()">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="auto" viewBox="0 0 2048 2048"><path fill="currentColor" d="M1920 896v128h-896v896H896v-896H0V896h896V0h128v896h896z"/></svg>
-                    </span>
-                </div>
-                <div id="faq3">
-                    <span class="subtractionIcon" onclick="faqClose3()">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="auto" viewBox="0 0 72 72"><path fill="#D0CFCE" d="M30 36L18 24l6-6l12 12l12-12l6 6l-12 12l12 12l-6 6l-12-12l-12 12l-6-6z"/><path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M30 36L18 24l6-6l12 12l12-12l6 6l-12 12l12 12l-6 6l-12-12l-12 12l-6-6z"/></svg>
-                    </span>
-
-                    <p>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.</p>
-                    <p>You can also download your favorite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.</p>
-                </div>
-            </div>
-
-            <div class="faq" title="FAQ 4">
-                <p onclick="faqOpen4()">How do I cancel?</p>
-                <div>
-                    <span class="additionIcon" onclick="faqOpen4()">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="auto" viewBox="0 0 2048 2048"><path fill="currentColor" d="M1920 896v128h-896v896H896v-896H0V896h896V0h128v896h896z"/></svg>
-                    </span>
-                </div>
-                <div id="faq4">
-                    <span class="subtractionIcon" onclick="faqClose4()">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="auto" viewBox="0 0 72 72"><path fill="#D0CFCE" d="M30 36L18 24l6-6l12 12l12-12l6 6l-12 12l12 12l-6 6l-12-12l-12 12l-6-6z"/><path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M30 36L18 24l6-6l12 12l12-12l6 6l-12 12l12 12l-6 6l-12-12l-12 12l-6-6z"/></svg>
-                    </span>
-
-                    <p>Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.</p>
-                </div>
-            </div>
-
-            <div class="faq" title="FAQ 5">
-                <p onclick="faqOpen5()">What can I watch on Netflix?</p>
-                <div>
-                    <span class="additionIcon" onclick="faqOpen5()">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="auto" viewBox="0 0 2048 2048"><path fill="currentColor" d="M1920 896v128h-896v896H896v-896H0V896h896V0h128v896h896z"/></svg>
-                    </span>
-                </div>
-                <div id="faq5">
-                    <span class="subtractionIcon" onclick="faqClose5()">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="auto" viewBox="0 0 72 72"><path fill="#D0CFCE" d="M30 36L18 24l6-6l12 12l12-12l6 6l-12 12l12 12l-6 6l-12-12l-12 12l-6-6z"/><path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M30 36L18 24l6-6l12 12l12-12l6 6l-12 12l12 12l-6 6l-12-12l-12 12l-6-6z"/></svg>
-                    </span>
-
-                    <p>Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.</p>
-                </div>
-            </div>
-
-            <div class="faq" title="FAQ 6">
-                <p onclick="faqOpen6()">Is Netflix good for kids?</p>
-                <div>
-                    <span class="additionIcon" onclick="faqOpen6()">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="auto" viewBox="0 0 2048 2048"><path fill="currentColor" d="M1920 896v128h-896v896H896v-896H0V896h896V0h128v896h896z"/></svg>
-                    </span>
-                </div>
-                <div id="faq6">
-                    <span class="subtractionIcon" onclick="faqClose6()">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="auto" viewBox="0 0 72 72"><path fill="#D0CFCE" d="M30 36L18 24l6-6l12 12l12-12l6 6l-12 12l12 12l-6 6l-12-12l-12 12l-6-6z"/><path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M30 36L18 24l6-6l12 12l12-12l6 6l-12 12l12 12l-6 6l-12-12l-12 12l-6-6z"/></svg>
-                    </span>
-
-                    <p>The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and movies in their own space.</p>
-                    <p>Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.</p>
-                </div>
-            </div>
-
-            <p>Ready to watch? Enter your email to create or restart your membership.</p>
-            <div class="registration">
-                <form action="home.php">
-                    <input type="email" name="email address" id="faq-email" placeholder="Email address">
-                </form>
-                <a href="#" class="btn btn-xl" id="faq-a">
-                    Get Started <span id="getStarted">&rsaquo;</span>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Table Section 
+         <!-- ===== TABLE START -->          
+        <section>
+            <div class="row">
+                <div class="table section">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Basic</th>
+                                <th>Standard</th>
+                                <th>Premium</th>
+                            </tr>
+                        </thead>
         
-    <section>
-        <table>
-            <thead>
-                <tr>
-                    <th></th>
-                    <th>Basic</th>
-                    <th>Standard</th>
-                    <th>Premium</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                <tr>
-                    <td>Monthly price after free month ends on 6/19/23</td>
-                    <td>$8.99</td>
-                    <td>$12.99</td>
-                    <td>$15.99</td>
-                </tr>
-
-                <tr>
-                    <td>HD Available</td>
-                    <td><i class="fas fa-times"></i></td>
-                    <td><i class="fas fa-check"></i></td>
-                    <td><i class="fas fa-check"></i></td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-
-    -->
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer">
-            <div class="container">
-                <div class="left-side">
-                    <div class="footer-link">
-                        <!-- https://help.netflix.com/contactus -->
-                        <a href="#">Questions? Contact us.</a>
-                    </div>
-            
-                    <div class="footer-link">
-                        <!-- https://help.netflix.com/support/412 -->
-                        <a href="#">FAQ</a>
-                    </div>
-            
-                    <div class="footer-link">
-                        <!-- https://www.netflix.com/youraccount -->
-                        <a href="#">Account</a>
-                    </div>
-            
-                    <div class="footer-link">
-                        <!-- http://ir.netflix.com/ -->
-                        <a href="#">Investor Relations</a>
-                    </div>
-            
-                    <div class="footer-link">
-                        <!-- https://www.netflix.com/watch -->
-                        <a href="#">Ways to Watch</a>
-                    </div>
-            
-                    <div class="footer-link">
-                        <!-- https://help.netflix.com/legal/privacy -->
-                        <a href="#">Privacy</a>
-                    </div>
-            
-                    <div class="footer-link">
-                        <!-- https://help.netflix.com/legal/corpinfo -->
-                        <a href="#">Corporate Information</a>
-                    </div>
-            
-                    <div class="footer-link">
-                        <!-- https://fast.com/ -->
-                        <a href="#">Speed Test</a>
-                    </div>
-            
-                    <div class="footer-link">
-                        <!-- https://www.netflix.com/ng/browse/genre/839338 -->
-                        <a href="#">Only on Netflix</a>
-                    </div>
-                </div>
-    
-                <div class="right-side">
-                    <div class="footer-link">
-                        <!-- https://help.netflix.com/ -->
-                        <a href="#">Help Center</a>
-                    </div>
-            
-                    <div class="footer-link">
-                        <!-- https://media.netflix.com/ -->
-                        <a href="#">Media Center</a>
-                    </div>
-            
-                    <div class="footer-link">
-                        <!-- https://jobs.netflix.com/jobs -->
-                        <a href="#">Jobs</a>
-                    </div>
-            
-                    <div class="footer-link">
-                        <!-- https://help.netflix.com/legal/termsofuse -->
-                        <a href="#">Terms of Use</a>
-                    </div>
-            
-                    <div class="footer-link">
-                        <!-- https://www.netflix.com/ng/# -->
-                        <a href="#">Cookie Preferences</a>
-                    </div>
-            
-                    <div class="footer-link">
-                        <!-- https://help.netflix.com/contactus -->
-                        <a href="#">Contact Us</a>
-                    </div>
-            
-                    <div class="footer-link">
-                        <!-- https://help.netflix.com/legal/notices -->
-                        <a href="#">Legal Notices</a>
-                    </div>
+                        <tbody>
+                            <tr>
+                                <td>Monthly price after free month ends on 6/19/23</td>
+                                <td>$8.99</td>
+                                <td>$12.99</td>
+                                <td>$15.99</td>
+                            </tr>
+        
+                            <tr>
+                                <td>HD Available</td>
+                                <td><i class="fas fa-times"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                                <td><i class="fas fa-check"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
+        </section>
+        <!-- ===== TABLE END -->
 
-            <div id="translate-button">
-                <button class="translate-button" onclick="document.getElementById('english').innerHTML = 'English'">English &blacktriangledown;</button>
-            </div>
-            <div id="english"></div>
 
-            <div id="last-thing">
-                Netflix Nigeria
-            </div>
-        </div>        
-    </footer>
+        <!-- ===== FOOTER START -->
+        <footer>
+            <div class="footer">
+                <div class="row">
+                    <div class="link-container">
+                        <div class="footer-link">
+                            <a href="#">Questions? Contact us.</a>
+                        </div>                
+                        <div class="footer-link">
+                            <a href="#">FAQ</a>
+                        </div>                
+                        <div class="footer-link">
+                            <a href="#">Account</a>
+                        </div>
+                        <div class="footer-link">
+                            <a href="#">Investor Relations</a>
+                        </div>                
+                        <div class="footer-link">
+                            <a href="#">Ways to Watch</a>
+                        </div>                
+                        <div class="footer-link">
+                            <a href="#">Privacy</a>
+                        </div>
+                        <div class="footer-link"> 
+                            <a href="#">Corporate Information</a>
+                        </div> 
+                        <div class="footer-link">
+                            <a href="#">Speed Test</a>
+                        </div>                
+                        <div class="footer-link">
+                            <a href="#">Only on Netflix</a>
+                        </div>
+                        <div class="footer-link">
+                            <a href="#">Help Center</a>
+                        </div>                
+                        <div class="footer-link">
+                            <a href="#">Media Center</a>
+                        </div>                
+                        <div class="footer-link">
+                            <a href="#">Jobs</a>
+                        </div>
+                        <div class="footer-link">
+                            <a href="#">Terms of Use</a>
+                        </div>                
+                        <div class="footer-link">
+                            <a href="#">Cookie Preferences</a>
+                        </div>                
+                        <div class="footer-link">
+                            <a href="#">Contact Us</a>
+                        </div>                
+                        <div class="footer-link">
+                            <a href="#">Legal Notices</a>
+                        </div>
+                    </div>                                
+                </div>
 
-    <!-- Javascript Section 
-        <script>
-            // Onclick opens the sidebar
-            function faqOpen1() {
-                document.getElementById('faq1').style.display = "block";
-            }
-            function faqOpen2() {
-                document.getElementById('faq2').style.display = "block";
-            }
-            function faqOpen3() {
-                document.getElementById('faq3').style.display = "block";
-            }
-            function faqOpen4() {
-                document.getElementById('faq4').style.display = "block";
-            }
-            function faqOpen5() {
-                document.getElementById('faq5').style.display = "block";
-            }
-            function faqOpen6() {
-                document.getElementById('faq6').style.display = "block";
-            }
+                <div id="translate-button">
+                    <button class="translate-button" >
+                        Language 
+                        <span onclick="langsOpen()" class="triangle" id="downTriangle">&blacktriangledown;</span>
+                        <span onclick="langsClose()" class="triangle" id="rightTriangle">&blacktriangleleft;</span>
+                    </button>
+                </div>
+                <div id="langs-container" class="langs-container">
+                    <form action="" method="post">
+                        <div class="english">
+                            <label for="english">English Language</label>
+                            <input type="checkbox" name="English" id="english">
+                        </div>
+                        <div class="yoruba">
+                            <label for="yoruba">Yoruba Language</label>
+                            <input type="checkbox" name="Yoruba Language" id="yoruba">
+                        </div>
+                        <div class="igbo">
+                            <label for="igbo">Igbo Language</label>
+                            <input type="checkbox" name="igbo" id="igbo">
+                        </div>
+                        <div class="hausa">
+                            <label for="hausa">Hausa Language</label>
+                            <input type="checkbox" name="hausa" id="hausa">
+                        </div>
+                        <div class="french">
+                            <label for="french">French</label>
+                            <input type="checkbox" name="French" id="french">
+                        </div>
+                    </form>
+                </div>
 
-            // Onclick closes the sidebar
-            function faqClose1() {
-                document.getElementById('faq1').style.display = "none";
-            }
-            function faqClose2() {
-                document.getElementById('faq2').style.display = "none";
-            }
-            function faqClose3() {
-                document.getElementById('faq3').style.display = "none";
-            }
-            function faqClose4() {
-                document.getElementById('faq4').style.display = "none";
-            }
-            function faqClose5() {
-                document.getElementById('faq5').style.display = "none";
-            }
-            function faqClose6() {
-                document.getElementById('faq6').style.display = "none";
-            }
+                <div id="last-thing">
+                    Netflix Nigeria
+                </div>
+            </div>        
+        </footer>
+        <!-- ===== FOOTER END -->
 
-        </script>
-    -->
-    
-</body>
+        <!-- Strong men make easy times.
+            Easy times make soft men.
+            Soft men make hard times.
+            Hard times make strong men.
+        -->
+
+        <script src="/main.js"></script>
+    </body>
 </html>

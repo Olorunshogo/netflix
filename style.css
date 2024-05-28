@@ -48,6 +48,7 @@ ul {
 a {
     color: var(--link-white);
     text-decoration: none;
+    font-size: 1rem;
 }
 
 /* ===== HEADERS ===== */
@@ -59,7 +60,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     font-weight: 900;
     font-size: 3rem;
-    line-height: 1.1;
+    line-height: 1.5;
     margin: 0 0 2rem;
     text-align: center;
 }
@@ -68,7 +69,7 @@ h1 {
 p {
     color: var(--dull-white);
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 1.25;
     margin: 0 0 1rem;
     text-align: center;
@@ -79,7 +80,7 @@ p {
     display: inline-block;
     background: var(--primary-color);
     color: var(--dull-white);
-    padding: 0.4rem 1.5rem;
+    padding: 0.3rem 1.5rem;
     font-size: 1rem;
     border: none;
     border-radius: 4px;
@@ -107,6 +108,7 @@ p {
     font-weight: 400;
     display: inline;
     margin-left: 1rem;
+    height: 50px;
 }
 
 /* ===== EMAIL INPUT FIELD CONTAINER ===== */
@@ -116,6 +118,7 @@ p {
     align-items: center;
     text-align: center;
     margin-top: 2rem;
+    transition: var(--trans-4);
 }
 
 .registration input[type=email] {
@@ -125,7 +128,7 @@ p {
     color: var(--dull-white);
     margin: 0;
     font-size: 1rem;
-    padding: 1.2rem 1.5rem;
+    padding: 1rem 1.5rem;
     cursor: pointer;
     caret-color: var(--dull-white);
     min-width: 450px;
@@ -227,6 +230,7 @@ section {
     flex-direction: row;
     align-items: center;
     padding: 4% 4% 4% 2%;
+    width: 100%;
 }
 
 /* ===== ENJOY YOUR TV SECTION ===== */
@@ -247,6 +251,7 @@ section {
 /* ===== DOWNLOAD AND WATCH OFFLINE SECTION ===== */
 .download {
     display: flex;
+    flex-direction: row;
     align-items: center;
 }
 
@@ -288,7 +293,7 @@ section {
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 75%;
     transition: var(--trans-4);
 }
 
@@ -307,6 +312,7 @@ section {
     margin-top: 1rem;
     text-align: left;
     color: var(--dull-white);
+    font-size: 1rem;
 }
 
 
@@ -326,6 +332,7 @@ section {
     transition: var(--trans-5);
     box-shadow: 2px 1px 1px 1px #111,
         -2px 1px 1px 1px #111;
+    margin-top: 8px;
 }
 
 .faqs .faq-container #faq1 p, 
@@ -366,7 +373,6 @@ section {
 
 .table table {
     width: 80%;
-    background-color: #111;
     border-collapse: collapse;
     text-align: left;
     margin: 0 auto;
@@ -376,6 +382,14 @@ section {
 .table table tr {
     border-bottom: 1px solid var(--primary-bg);
     height: 60px;
+}
+
+.table table tr th {
+    font-size: 1.4rem;
+}
+
+.table table tr td {
+    font-size: 1rem;
 }
 
 .table table tr:hover {
@@ -405,6 +419,7 @@ section {
     max-width: 22%;
     padding: 10px;
     margin: 0 auto;
+    font-size: 1rem;
     transition: var(--trans-4);
 }
 
@@ -479,41 +494,292 @@ section {
     border: none;
     border-radius: 4px;
     width: fit-content;
-    /* box-shadow: 1px 1px 6px  1px #ddd; */
 }
 
 /* Responsivesness for Tablets with max-width of 700px */
-@media (max-width: 700px) {
+@media only screen and (max-width: 760px) {
     /* Showcase section */
     .showcase::after {
         box-shadow: inset 80px 80px 250px #000000, inset -80px -80px 250px #000000;
     }
 
-    .showcase-content h1, .section1 h1, .section2 h1, .section3 h1, .section4 h1, .section5 h1 {
-        font-weight: 700;
-        font-size: 2rem;
-        line-height: 1.6;
-        margin: 0 0 1.2rem;
-        text-align: center;
+    .showcase .showcase-top {
+        height: 70px;   
     }
 
-    /* Sections */
-    .section1, .section2, .section3, .section4 {
+    .showcase .showcase-top .logo {
+        width: 80px;
+        left: 70px;
+    }
+
+    a {
+        font-size: 0.9rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin: 0 0 1.2rem;
+    }
+
+    .registration {
+        margin-top: 1rem;
+    }
+
+    .registration input[type=email] {
+        font-size: 0.9rem;
+        padding: 1rem 1.5rem;
+        height: 45px;
+        min-width: 100%;
+    }
+    
+    .registration input[type=email]::placeholder {
+        font-size: 1rem;
+    }
+
+    section {
+        margin: 4px 0;
+    }
+
+    .section {
         display: flex;
         flex-direction: column;
+        padding: 2% 1%;
     }
 
-    /* Form section at the FAQ */
-    .showcase-content .registration input[type=email],
-    .section5 .registration [type=email] {
-        font-size: 1rem;
-        padding: 1.2rem 1.5rem;
-        min-width: 350px;
+    .tv .description {
+        padding: 1%;
+        width: 100%;
     }
 
-    /* Buttons */  
+    .background-image {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .background-image img {
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .download .phone {
+        margin-left: 0px;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        padding: 0.2rem 1.2rem;
+        font-size: 0.9rem;
+        margin-right: 0px;
+    }
+
     .btn-xl {
-        font-size: 1.3rem;
-        padding: 12px 1.2rem;
+        font-size: 1rem;
+        padding: 0.8rem 1rem;
+        height: 45px;
+    }    
+
+    .showcase .showcase-content {
+        padding: 6rem 0 2rem 0;
+    }    
+
+    .faqs .faq-container .faq {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 6px 1rem;
+        position: relative;
+        width: 100%;
+        height: 50px;
+    }
+
+    .faqs .faq-container .additionIcon {
+        font-size: 30px;
+        font-size: 500;
+    }
+    
+    .faqs .faq-container .multiplicationIcon {
+        top: 25px;
+        font-size: 30px;
+        font-size: 500;
+    }
+
+    .faqs .faq-container #faq1 p, 
+    .faqs .faq-container #faq2 p,
+    .faqs .faq-container #faq3 p,
+    .faqs .faq-container #faq4 p,
+    .faqs .faq-container #faq5 p,
+    .faqs .faq-container #faq6 p {
+        font-size: 0.9rem;
+    }
+
+    .table {
+        overflow-x: auto;
+    }
+
+    .table table {
+        width: 96%;   
+    }
+
+    .table table tr {
+        height: 45px;
+    }
+
+    .table table tr th {
+        font-size: 1rem;
+        padding-right: 12px;
+    }
+    
+    .table table tr td {
+        font-size: 0.8rem;
+    }
+
+    .footer .footer-link {
+        flex: 0 0 50%;
+        margin-right: 5px;
+        max-width: 50%;
+        padding: 10px;
+        margin: 0 auto;
+        transition: var(--trans-4);
+    }
+}
+
+/* Responsivesness for Tablets with max-width of 700px */
+@media only screen and (max-width: 450px) {
+    /* Showcase section */
+    .showcase::after {
+        box-shadow: inset 10px 10px 100px #000000, inset -80px -80px 250px #000000;
+    }
+
+    .showcase .showcase-top {
+        height: 60px;  
+        display: flex; 
+    }
+
+    .showcase .showcase-top .logo {
+        width: 80px;
+        left: 55px;
+    }
+
+    .showcase .showcase-top .sign-up {
+        right: -12px;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    .registration {
+        margin-top: 0.5rem;
+    }
+
+    .registration input[type=email] {
+        font-size: 0.8rem;
+        height: 40px;
+    }
+    
+    .registration input[type=email]::placeholder {
+        font-size: 0.8rem;
+    }
+
+    section {
+        margin: 3px 0;
+    }
+
+    .section {
+        padding: 1%;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    .btn {
+        padding: 0.2rem 1rem;
+        font-size: 0.8rem;
+    }
+
+    .btn-xl {
+        font-size: 0.9rem;
+        padding: 0.8rem;
+        height: 40px;
+        display: flex;
+        align-items: center;
+    }    
+
+    .showcase .showcase-content {
+        padding: 4rem 0 1rem 0;
+    }    
+
+    .faqs .faq-container .faq {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 6px 1rem;
+        position: relative;
+        width: 100%;
+        height: 40px;
+    }
+
+    .faqs .faq-container .additionIcon {
+        font-size: 25px;
+        font-size: 500;
+    }
+    
+    .faqs .faq-container .multiplicationIcon {
+        top: 20px;
+        font-size: 25px;
+        font-size: 500;
+    }
+
+    .table {
+        overflow-x: auto;
+    }
+
+    .table table {
+        width: 98%;  
+    }
+
+    .table table tr {
+        height: 45px;
+    }
+
+    .table table tr th {
+        font-size: 1rem;
+        padding-right: 12px;
+    }
+    
+    .table table tr td {
+        font-size: 0.8rem;
+    }
+
+    .footer .footer-link {
+        flex: 0 0 50%;
+        margin-right: 5px;
+        max-width: 50%;
+        padding: 5px;
+        margin: 0 auto;
+        transition: var(--trans-4);
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .footer .link-container {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .footer .footer-link {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 4px;
+        margin: 0;
     }
 }

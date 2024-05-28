@@ -28,7 +28,7 @@ function faqOpen5() {
 }
 
 function faqOpen6() {
-    document.getElementById("down").style.display = "none";
+    document.getElementById("additionIcon6").style.display = "none";
     document.getElementById('faq6').style.display = "block";
 }
 

@@ -2,7 +2,7 @@
 
 ## Description
 This is a comprehensive movie streaming platform designed to provide users with an immersive and enjoyable viewing experience. Built on GitHub, this repository encompasses the codebase and resources necessary to create a dynamic and user-friendly Netflix homepage for streaming movies.
-Link: https://netfleek.netlify.app/
+[Website Live Link](https://netfleek.netlify.app/)
 
 
 
